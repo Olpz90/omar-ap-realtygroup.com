@@ -16,7 +16,9 @@
     <div class="container">
       <div class="navbar__content">
         <div class="navbar__brand">
-          <h2 class="brand-logo">A.P Realty Group</h2>
+          <a href="#home">
+            <img src="A.P Realty Group_logo.ai-1.png" alt="A.P Realty Group Logo" style="height: 50px;" />
+          </a>
         </div>
         <div class="navbar__menu" id="navbar-menu">
           <a href="#home" class="navbar__link">Home</a>
@@ -25,7 +27,7 @@
           <a href="#contact" class="navbar__link">Contact</a>
         </div>
         <div class="navbar__phone">
-          <a href="tel:(630)329-3984" class="phone-link">(630)329-3984</a>
+          <a href="tel:630-329-3984" class="phone-link">630-329-3984</a>
         </div>
         <button class="navbar__toggle" id="navbar-toggle" aria-label="Toggle navigation">
           <span class="hamburger-line"></span>
@@ -43,9 +45,7 @@
         <div class="hero__text">
           <h1 class="hero__title">Your Trusted Real Estate Experts</h1>
           <p class="hero__subtitle">in the Chicago & North West Suburbs</p>
-          <p class="hero__description">
-            Professional real estate services with 5-star client reviews. We integrate marketing, technology, and innovative strategies to help you find your dream home.
-          </p>
+          <p class="hero__description">Professional real estate services with 5-star client reviews. We integrate marketing, technology, and innovative strategies to help you find your dream home.</p>
           <div class="hero__actions">
             <a href="#properties" class="btn btn--primary btn--lg">View Properties</a>
             <a href="#contact" class="btn btn--outline btn--lg">Contact Us</a>
@@ -63,12 +63,8 @@
         <div class="about__text">
           <h2 class="section-title">Meet Omar López</h2>
           <p class="section-subtitle">REALTOR & Your Trusted Real Estate Professional</p>
-          <p class="about__description">
-            I began my real estate career in Aurora, Illinois, in 2013. Recognized by my peers as a highly respected professional, my team and I are committed to staying ahead of the curve, seamlessly integrating marketing, technology, and innovative strategies.
-          </p>
-          <p class="about__highlight">
-            The reason behind my 5-star client reviews is my directness, transparency, and ability to keep both clients and deals on track.
-          </p>
+          <p class="about__description">I began my real estate career in Aurora, Illinois, in 2013. Recognized by my peers as a highly respected professional, my team and I are committed to staying ahead of the curve, seamlessly integrating marketing, technology, and innovative strategies.</p>
+          <p class="about__highlight">The reason behind my 5-star client reviews is my directness, transparency, and ability to keep both clients and deals on track.</p>
           <div class="about__stats">
             <div class="stat">
               <h3 class="stat__number">12+</h3>
@@ -85,11 +81,7 @@
           </div>
         </div>
         <div class="about__image">
-          <div class="image-placeholder">
-            <div class="placeholder-content">
-              <span>Professional Photo</span>
-            </div>
-          </div>
+          <img src="LopezO_005x.jpg" alt="Omar López, REALTOR" style="max-width: 100%; border-radius: 12px;" />
         </div>
       </div>
     </div>
@@ -103,8 +95,7 @@
         <p class="section-subtitle">Discover your next home in the Chicago & North West Suburbs</p>
       </div>
       <div class="properties__grid">
-        <!-- Property Cards as you already have -->
-        <!-- No changes needed here -->
+        <!-- Property cards can go here -->
       </div>
     </div>
   </section>
@@ -119,7 +110,7 @@
           <div class="contact__details">
             <div class="contact__item">
               <h4>Phone</h4>
-              <a href="tel:(630)329-3984">(630)329-3984</a>
+              <a href="tel:630-329-3984">630-329-3984</a>
             </div>
             <div class="contact__item">
               <h4>Email</h4>
@@ -133,7 +124,33 @@
         </div>
         <div class="contact__form">
           <form id="contact-form" class="form">
-            <!-- Your existing form remains unchanged -->
+            <div class="form-group">
+              <label for="name" class="form-label">Full Name *</label>
+              <input type="text" id="name" name="name" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-control" required />
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Phone Number</label>
+              <input type="tel" id="phone" name="phone" class="form-control" />
+            </div>
+            <div class="form-group">
+              <label for="interest" class="form-label">I'm interested in</label>
+              <select id="interest" name="interest" class="form-control">
+                <option value="">Select an option</option>
+                <option value="buying">Buying a Home</option>
+                <option value="selling">Selling a Home</option>
+                <option value="renting">Renting</option>
+                <option value="consultation">Free Consultation</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message" class="form-label">Message</label>
+              <textarea id="message" name="message" rows="4" class="form-control" placeholder="Tell us about your real estate needs..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full-width btn--lg">Send Message</button>
           </form>
         </div>
       </div>
@@ -150,18 +167,24 @@
         </div>
         <div class="footer__contact">
           <h4>Contact Info</h4>
-          <p><a href="tel:(630)329-3984">(630)329-3984</a></p>
+          <p><a href="tel:630-329-3984">630-329-3984</a></p>
           <p><a href="mailto:omar@aprealtygroup.com">omar@aprealtygroup.com</a></p>
         </div>
         <div class="footer__social">
           <h4>Follow Us</h4>
-  <div class="social-links">
-    <a href="https://www.facebook.com/omar.lopez.820264" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
-    <a href="https://www.instagram.com/OmarLpz90/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
-    <a href="https://www.linkedin.com/in/olopez90/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
-  </div>
-</div>
+          <div class="social-links">
+            <a href="https://www.facebook.com/omar.lopez.820264" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+            <a href="https://www.instagram.com/OmarLpz90/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+            <a href="https://www.linkedin.com/in/olopez90/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2025 A.P Realty Group. All rights reserved. | Omar López, REALTOR</p>
+      </div>
+    </div>
+  </footer>
 
-    <script src="app.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
